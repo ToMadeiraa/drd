@@ -1,116 +1,214 @@
-<!--<!DOCTYPE html>-->
-<!--{% load static %}-->
-<!--<html>-->
-<!--<head>-->
-<!--    <meta charset="utf-8" />-->
-<!--    <title>dreadz-cup.tv</title>-->
-<!--    <link href = '../static/styles.css' rel = "stylesheet" type = "text/css">-->
-<!--</head>-->
-<!--<body>-->
-<!--        <table>-->
-<!--            <tr>-->
-<!--                <td>Турниры</td> <td>Компания</td> <td>Цена</td>-->
-<!--            </tr>-->
-<!--        </table>-->
-<!--    <h2>User form</h2>-->
-<!--    <form method="post" action="postuser/" style="margin-left: 800px">-->
-<!--        {% csrf_token %}-->
-<!--        <p>Name:<br> <input name="name" /></p>-->
-<!--        <p>Age:<br> <input name="age" type="number" /></p>-->
-<!--        Ссылка <a href = "google.com/"> ссылка </a><br/>-->
-<!--        <input type="submit" value="Send" />-->
-
-
-<!--        width: 100%; /* Ширина */-->
-<!--        background: #fc0; /* Цвет фона */-->
-<!--        padding: 20px; /* Поля */-->
-<!--    </form>-->
-<!--    <style>-->
-<!--        body {-->
-<!--       /* Цвет фона и путь к файлу */-->
-<!--        background: url(../static/images/background.jpg) no-repeat;-->
-<!--       -moz-background-size: 100%; /* Firefox 3.6+ */-->
-<!--        -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */-->
-<!--        -o-background-size: 100%; /* Opera 9.6+ */-->
-<!--        background-size: 100%; /* Современные браузеры */-->
-<!--        color: #fff; /* Цвет текста */-->
-<!--        }-->
-<!--  </style>-->
-<!--</body>-->
-<!--</html>-->
-
-<!DOCTYPE html>
 {% load static %}
-<html>
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="{% static "css/styles.css" %}" />
-        <title>Блочная верстка в HTML5</title>
-    </head>
-    <body>
-        <div id="header">
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Кизяки 3</title>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+    <!-- animate css link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="fake_header">
+        <table>
+
+        </table>
+    </div>
+    <div id="header">
         <table>
             <tr>
                 <td>Турнир</td> <td>Компания</td> <td>Цена</td>
             </tr>
         </table>
-        </div>
-        <div id="previous">
-        <table>
-            <tr>
-                <td> <img class="animate2" src="{% static "images/button-left.png" %}" /> </td>
-                <td> <a href="http://127.0.0.1:8000/cossacks3"><img class="animate1" src="{% static "images/penege1.png" %}" /> </td>
-                <td> <a href="http://127.0.0.1:8000/cossacks3"><img class="animate1" src="{% static "images/penege1.png" %}" /> </td>
-                <td> <a href="http://127.0.0.1:8000/cossacks3"><img class="animate1" src="{% static "images/penege1.png" %}" /> </td>
-                <td> <img class="animate2" src="{% static "images/button-right.png" %}" /> </td>
-            </tr>
-            <tr>
-                <td> </td>
-                <td>Турнир</td>
-                <td>Турнир</td>
-                <td>Турнир</td>
-                <td> </td>
-            </tr>
-        </table>
-        </div>
+    </div>
 
-        <div id="continuous">
-       <table>
-            <tr>
-                <td>       <img class="animate2" src="{% static "images/button-left.png" %}" />       </td>
-                <td>       <img class="animate1" src="{% static "images/penege1.png" %}" />       </td>
-                <td>       <img class="animate1" src="{% static "images/penege1.png" %}" />       </td>
-                <td>       <img class="animate1" src="{% static "images/penege1.png" %}" />       </td>
-                <td>       <img class="animate2" src="{% static "images/button-right.png" %}" />       </td>
-            </tr>
-            <tr>
-                <td> </td>
-                <td>Турнир</td>
-                <td>Турнир</td>
-                <td>Турнир</td>
-                <td> </td>
-            </tr>
-        </table>
-        </div>
+    <!-- slider section -->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <table>
+                <tr>
+                    <td> <a href="http://127.0.0.1:8000/cossacks3"><img class="animate1" src="{% static "images/penege1.png" %}" /> </a></td>
+                    <td> <a href="http://127.0.0.1:8000/cossacks3"><img class="animate1" src="{% static "images/penege1.png" %}" /> </a></td>
+                    <td> <a href="http://127.0.0.1:8000/cossacks3"><img class="animate1" src="{% static "images/penege1.png" %}" /> </a></td>
+                </tr>
+                <tr>
+                    <td>   <a href="http://127.0.0.1:8000/cossacks3">Турнир<</a>  </td>
+                    <td>   <a href="http://127.0.0.1:8000/cossacks3">Турнир<</a>  </td>
+                    <td>   <a href="http://127.0.0.1:8000/cossacks3">Турнир<</a>  </td>
+                </tr>
+            </table>
+          </div>
+          <div class="carousel-item" data-bs-interval="10000">
+            <table>
+                <tr>
+                    <td> <img class="animate1" src="{% static "images/penege1.png" %}" /> </td>
+                    <td> <img class="animate1" src="{% static "images/penege1.png" %}" /> </td>
+                    <td> <img class="animate1" src="{% static "images/penege1.png" %}" /> </td>
+                </tr>
+                <tr>
+                    <td>   Турнир  </td> <td>   Турнир  </td> <td>   Турнир  </td>
+                </tr>
+            </table>
+          </div>
+          <div class="carousel-item" data-bs-interval="10000">
+            <table>
+                <tr>
+                    <td> <img class="animate1" src="{% static "images/penege1.png" %}" /> </td>
+                    <td> <img class="animate1" src="{% static "images/penege1.png" %}" /> </td>
+                    <td> <img class="animate1" src="{% static "images/penege1.png" %}" /> </td>
+                </tr>
+                <tr>
+                    <td>   Турнир  </td> <td>   Турнир  </td> <td>   Турнир  </td>
+                </tr>
+            </table>
+          </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+              data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+              data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
 
-        <div id="next">
-        <table>
-            <tr>
-                <td>       <img class="animate2" src="{% static "images/button-left.png" %}" />       </td>
-                <td>       <img class="animate1" src="{% static "images/penege1.png" %}" />       </td>
-                <td>       <img class="animate1" src="{% static "images/penege1.png" %}" />       </td>
-                <td>       <img class="animate1" src="{% static "images/penege1.png" %}" />       </td>
-                <td>       <img class="animate2" src="{% static "images/button-right.png" %}" />       </td>
-            </tr>
-            <tr>
-                <td> </td>
-                <td>Турнир</td>
-                <td>Турнир</td>
-                <td>Турнир</td>
-                <td> </td>
-            </tr>
-        </table>
-        </div>
-        <div id="footer">Футер</div>
-    </body>
+
+
+
+        <!-- slider 2 section -->
+    <div id="carouselExampleDark2" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <table>
+                <tr>
+                    <td> <img class="animate1" src="{% static "images/penege1.png" %}" /> </td>
+                    <td> <img class="animate1" src="{% static "images/penege1.png" %}" /> </td>
+                    <td> <img class="animate1" src="{% static "images/penege1.png" %}" /> </td>
+                </tr>
+                <tr>
+                    <td>   Турнир  </td> <td>   Турнир  </td> <td>   Турнир  </td>
+                </tr>
+            </table>
+          </div>
+          <div class="carousel-item" data-bs-interval="10000">
+            <table>
+                <tr>
+                    <td> <img class="animate1" src="{% static "images/penege1.png" %}" /> </td>
+                    <td> <img class="animate1" src="{% static "images/penege1.png" %}" /> </td>
+                    <td> <img class="animate1" src="{% static "images/penege1.png" %}" /> </td>
+                </tr>
+                <tr>
+                    <td>   Турнир  </td> <td>   Турнир  </td> <td>   Турнир  </td>
+                </tr>
+            </table>
+          </div>
+          <div class="carousel-item" data-bs-interval="10000">
+            <table>
+                <tr>
+                    <td> <img class="animate1" src="{% static "images/penege1.png" %}" /> </td>
+                    <td> <img class="animate1" src="{% static "images/penege1.png" %}" /> </td>
+                    <td> <img class="animate1" src="{% static "images/penege1.png" %}" /> </td>
+                </tr>
+                <tr>
+                    <td>   Турнир  </td> <td>   Турнир  </td> <td>   Турнир  </td>
+                </tr>
+            </table>
+          </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark2"
+              data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark2"
+              data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+        <!-- slider 3 section -->
+    <div id="carouselExampleDark3" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <table>
+                <tr>
+                    <td> <img class="animate1" src="{% static "images/penege1.png" %}" /> </td>
+                    <td> <img class="animate1" src="{% static "images/penege1.png" %}" /> </td>
+                    <td> <img class="animate1" src="{% static "images/penege1.png" %}" /> </td>
+                </tr>
+                <tr>
+                    <td>   Турнир  </td> <td>   Турнир  </td> <td>   Турнир  </td>
+                </tr>
+            </table>
+          </div>
+          <div class="carousel-item" data-bs-interval="10000">
+            <table>
+                <tr>
+                    <td> <img class="animate1" src="{% static "images/penege1.png" %}" /> </td>
+                    <td> <img class="animate1" src="{% static "images/penege1.png" %}" /> </td>
+                    <td> <img class="animate1" src="{% static "images/penege1.png" %}" /> </td>
+                </tr>
+                <tr>
+                    <td>   Турнир  </td> <td>   Турнир  </td> <td>   Турнир  </td>
+                </tr>
+            </table>
+          </div>
+          <div class="carousel-item" data-bs-interval="10000">
+            <table>
+                <tr>
+                    <td> <img class="animate1" src="{% static "images/penege1.png" %}" /> </td>
+                    <td> <img class="animate1" src="{% static "images/penege1.png" %}" /> </td>
+                    <td> <img class="animate1" src="{% static "images/penege1.png" %}" /> </td>
+                </tr>
+                <tr>
+                    <td>   Турнир  </td> <td>   Турнир  </td> <td>   Турнир  </td>
+                </tr>
+            </table>
+          </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark3"
+              data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark3"
+              data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous">
+      </script>
+
+    <div id="footer">Футер</div>
+</body>
+
 </html>

@@ -10,40 +10,57 @@
 }
 
 div{
-    background: rgba(41, 90, 253, 0.7);
+    background: rgba(41, 90, 253, 0.0);
     width : 60%;
     margin-left: auto;
     margin-right: auto;
-    border: 1px solid black;
+    border: 0px solid black;
     font-size: 20px;
-    height: 15em;
+    height: 18em;
+
  }
+
 table{
-    padding: 1em;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 1em;
     text-align:center;
-    border-spacing: 2em 1em
+    border-spacing: 4em
  }
+
 td{
-    padding: 1em;
-    margin-left: auto;
-    margin-right: auto;
+    padding-top: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin: auto;
     text-align:center;
  }
+
 tr{
-    padding: 1em;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     text-align:center;
  }
+
 img {
-    border: 1px solid #000000;
+    border: 0px solid #000000;
+    padding-top: 1.5em;
 }
 
+#carouselExampleDark, #carouselExampleDark2,#carouselExampleDark3, #header, #footer {
+    background: rgba(41, 90, 253, 0.7);
+    border: 1px solid black;
+}
+
+ #fake_header{
+    height: 5em;
+ }
 
  #header{
-    height: 15%;
+    height: 5em;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
  }
  #footer{
      height: 5em;
@@ -86,6 +103,10 @@ img.animate2:hover {
 }
 
 
+.carousel-item {
+    transition: transform 1s ease, opacity .5s ease-out
+}
+
 .carousel-inner .carousel-caption{
     padding-top: 100px;
     padding-bottom: 100px;
@@ -108,23 +129,4 @@ img.animate2:hover {
     color: #fff;
 }
 
-/* animated css */
-.animate__animated.animate__zoomIn{
-    --animate-delay: 1.7s;
-    --animate-duration: 1.2s
-}
-.animate__animated.animate__bounce{
-    --animate-delay: 1s;
-    --animate-duration: 1.5s
-}
 
-.animate__animated.animate__fadeInDown{
-    --animate-delay: 1s;
-    --animate-duration: 1.5s
-}
-
-.animate__animated.animate__fadeInRight
-{
-    --animate-delay: 1s;
-    --animate-duration: 1.5s
-}
