@@ -16,27 +16,40 @@ div{
     margin-right: auto;
     border: 1px solid black;
     font-size: 20px;
-    height: 25%;
+    height: 15em;
  }
 table{
+    padding: 1em;
     margin-left: auto;
     margin-right: auto;
     text-align:center;
     border-spacing: 2em 1em
  }
 td{
+    padding: 1em;
     margin-left: auto;
     margin-right: auto;
     text-align:center;
  }
 tr{
+    padding: 1em;
     margin-left: auto;
     margin-right: auto;
     text-align:center;
  }
 img {
-    border: 0px solid #000000;
+    border: 1px solid #000000;
 }
+
+
+ #header{
+    height: 15%;
+ }
+ #footer{
+     height: 5em;
+ }
+
+
 
 img.animate1{
     —moz-transition: all 1s ease;
@@ -72,11 +85,46 @@ img.animate2:hover {
     transform: scale(1.0); /* эффект трансформации для других браузеров */
 }
 
- #header{
-    height: 15%;
- }
- #footer{
-     height: 5em;
- }
 
+.carousel-inner .carousel-caption{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.carousel-inner .carousel-caption h1{
+    font-size: 52px;
+}
 
+.carousel-inner .carousel-caption .button{
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    border: 2px solid #3489bd;
+    text-decoration: none;
+    background-color: #3489bd;
+    color: #fff;
+}
+
+/* animated css */
+.animate__animated.animate__zoomIn{
+    --animate-delay: 1.7s;
+    --animate-duration: 1.2s
+}
+.animate__animated.animate__bounce{
+    --animate-delay: 1s;
+    --animate-duration: 1.5s
+}
+
+.animate__animated.animate__fadeInDown{
+    --animate-delay: 1s;
+    --animate-duration: 1.5s
+}
+
+.animate__animated.animate__fadeInRight
+{
+    --animate-delay: 1s;
+    --animate-duration: 1.5s
+}
