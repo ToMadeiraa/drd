@@ -42,28 +42,60 @@ tr{
  }
 
 img {
-    border: 0px solid #000000;
     padding-top: 1.5em;
 }
 
-#carouselExampleDark, #carouselExampleDark2,#carouselExampleDark3, #header, #footer {
+#drd {
+    padding-top: 0em;
+}
+
+#carouselExampleDark, #carouselExampleDark2,#carouselExampleDark3, #header  {
     background: rgba(41, 90, 253, 0.7);
     border: 1px solid black;
 }
 
+#tour1 {
+    background: rgba(41, 90, 253, 0.7);
+    width: 60%;
+    height: 120em;
+}
  #fake_header{
-    height: 5em;
+     width: 60%;
+    height: 150px;
+     right: 20%;
+     left: 20%;
  }
 
  #header{
-    height: 5em;
+     width: 60%;
+    height: 150px;
     position: fixed;
+     right: 20%;
+     left: 20%;
     top: 0;
     z-index: 100;
-    width: 100%;
  }
+
+ #hdr {
+     width="200";
+     cellpadding : 100px;
+     cellspacing : 100px;
+     height: 150px;
+     margin: auto;
+ }
+
+#hdrtr {
+    cellpadding : 100px;
+     cellspacing : 100px;
+     width: 60%;
+     height: 150px;
+     margin: auto;
+ }
+
  #footer{
      height: 5em;
+     border: 1px solid black;
+     background: rgba(41, 90, 253, 0.7);
  }
 
 
