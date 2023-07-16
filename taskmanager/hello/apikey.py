@@ -3,7 +3,7 @@ import challonge
 import sqlite3 as sq
 
 
-API_KEY = "ZpMMUqVouD83C40RQ67qItnnod5lPeAcDHa7Y7mL"
+API_KEY = ""
 user_agent = "pychallonge-1.11.5"
 
 
